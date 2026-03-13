@@ -1,0 +1,18 @@
+# @package _global_
+module:
+  _target_: emg2qwerty.lightning.DualStreamLateFusionCTCModule
+  in_features: 528
+  stream_mlp_features: [256]
+  conv_channels: 192
+  temporal_kernel_size: 5
+  gru_hidden_size: 192
+  gru_layers: 1
+  fusion_features: [256]
+  optimizer: ${optimizer}
+  lr_scheduler: ${lr_scheduler}
+  decoder: ${decoder}
+
+datamodule:
+  _target_: emg2qwerty.lightning.WindowedEMGDataModule
+  window_length: 8000
+  padding: [1800, 200]

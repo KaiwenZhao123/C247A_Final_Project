@@ -1,0 +1,16 @@
+# @package _global_
+module:
+  _target_: emg2qwerty.lightning.GradualFusionTDSConvCTCModule
+  in_features: 528
+  band_mlp_features: [256]
+  fusion_mlp_features: [256]
+  block_channels: [32, 32, 32, 32]
+  kernel_width: 32
+  optimizer: ${optimizer}
+  lr_scheduler: ${lr_scheduler}
+  decoder: ${decoder}
+
+datamodule:
+  _target_: emg2qwerty.lightning.WindowedEMGDataModule
+  window_length: 8000
+  padding: [1800, 200]
