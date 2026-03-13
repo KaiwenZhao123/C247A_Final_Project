@@ -1,5 +1,11 @@
 # C247A_Final_Project
+## Group Members
 
+- **Jingze Fu** — UID: 906202950 — fujingze1019@g.ucla.edu  
+- **Mu Li** — UID: 306780665 — lim29@ucla.edu  
+- **Maoqi Xu** — UID: 006770427 — mqxu@ucla.edu  
+- **Kaiwen Zhao** — UID: 606763706 — kaiwenzhao2@g.ucla.edu
+  
 ## Best Results Summary
 
 Our group has included all implemented models in this repository. The best-performing models from each experiment branch are summarized below.
