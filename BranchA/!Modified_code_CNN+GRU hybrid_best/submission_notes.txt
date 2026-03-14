@@ -1,0 +1,28 @@
+This code submission only includes the files that were modified from the baseline implementation.
+All other files are identical to the provided baseline and are therefore not included again.
+
+- These models were trained and tested locally using the following commands:
+  python -m emg2qwerty.train user="single_user" model="gru_ctc" trainer.accelerator=gpu trainer.devices=1 trainer.max_epochs=400
+  python -m emg2qwerty.train user="single_user" model="gru_ctc" checkpoint="best.ckpt" train=False trainer.accelerator=gpu decoder=ctc_beam hydra.launcher.mem_gb=64
+
+Included files:
+1. modules.py
+   - Modified model/module definitions.
+   - This file contains the main code changes relative to the baseline.
+
+2. lightning.py
+   - Modified training / PyTorch Lightning related code.
+   - This file was updated to support the experiments and training setup used in our project.
+
+3. gru_ctc.yaml
+   - Configuration file for the GRU-CTC experiment.
+   - Contains the hyperparameter and training settings used for this model.
+
+4. best.ckpt
+   - Best-performing checkpoint (model weights) obtained during training.
+   - This is the checkpoint corresponding to the best validation performance among our runs.
+
+Notes:
+- Except for the files listed above, the rest of the codebase is unchanged from the baseline.
+- To run the project, please combine these files with the original baseline code.
+- The checkpoint is provided for reproducibility / reference of the final trained model.
