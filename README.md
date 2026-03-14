@@ -5,7 +5,7 @@
 - **Mu Li** — UID: 306780665 — lim29@ucla.edu  
 - **Maoqi Xu** — UID: 006770427 — mqxu@ucla.edu  
 - **Kaiwen Zhao** — UID: 606763706 — kaiwenzhao2@g.ucla.edu
-## Included files in Best Model
+## Included files for Best Model
 1. modules.py
    - Modified model/module definitions.
    - This file contains the main code changes relative to the baseline.
