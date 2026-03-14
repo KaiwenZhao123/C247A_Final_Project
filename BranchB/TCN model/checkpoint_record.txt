@@ -1,0 +1,26 @@
+TCN Model Checkpoint Record
+===========================
+
+Model family:
+Dilated Residual TCN
+
+Configuration file:
+dilated_residual_tcn_ctc.yaml
+
+Best checkpoint path on VM:
+/mnt/data/emg2qwerty/logs/model6_dilated_tcn_20260310_050049/checkpoints/epoch=56-step=6840.ckpt
+
+Primary reported result (ctc_greedy):
+val/CER  = 17.76694679260254
+test/CER = 19.472660064697266
+
+Training setup:
+- optimizer: AdamW
+- learning rate: 1e-3
+- weight decay: 1e-5
+- augmentation: light SpecAugment
+- decoder used for main result: ctc_greedy
+
+Note:
+This package follows the same packaging style as the teammate model zip files,
+while only including the TCN branch materials and checkpoint record.
